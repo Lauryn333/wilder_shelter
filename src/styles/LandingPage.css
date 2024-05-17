@@ -1,0 +1,98 @@
+:root {
+  --button-color: #0082d1;
+  --hover-color: #00a2cb;
+  --text-color: #ebffd4;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/Montserrat.ttf");
+}
+
+* {
+  margin: 0;
+  font-family: montserrat;
+}
+
+.landing-page {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-nav {
+  height: 15vh;
+}
+
+.landing-logo {
+  max-height: 15vh;
+}
+
+.landing-info {
+  height: 85svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.landing-info h1 {
+  font-size: 3.8rem;
+  color: var(--text-color);
+}
+
+.landing-info h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.landing-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+  border: solid 1px var(--button-color);
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  text-decoration: none;
+}
+
+.landing-link:visited {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-nav {
+    height: 20vh;
+  }
+
+  .landing-logo {
+    max-height: 20vh;
+  }
+
+  .landing-info {
+    height: 80svh;
+  }
+
+  .landing-info h1 {
+    font-size: 5rem;
+  }
+
+  .landing-info h2 {
+    font-size: 3rem;
+  }
+
+  .landing-link {
+    font-size: 1.5rem;
+  }
+
+  .landing-link:hover {
+    border: solid 1px var(--hover-color);
+    background-color: var(--hover-color);
+  }
+}

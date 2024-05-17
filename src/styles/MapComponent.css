@@ -1,0 +1,82 @@
+:root {
+  --main-color: #0082d1;
+  --hover-color: #00a2cb;
+  --background-color: #ebffd4;
+}
+
+.global-div-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-container {
+  height: 70vh;
+  width: 80vw;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sidebar {
+  background-color: rgb(35 55 75 / 90%);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: "montserrat";
+  src: url("../assets/Montserrat.ttf");
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.marker {
+  background-image: url(../assets/marker.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 7rem;
+}
+
+.mapboxgl-popup-content {
+  font-family: montserrat;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  border: 0.1rem solid;
+  border-color: white;
+  background-color: rgba(0, 130, 209, 1);
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 1rem;
+  background-color: rgba(0, 130, 209, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .global-div-map {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-container {
+    height: 80vh;
+    width: 55vw;
+    padding: 1rem;
+  }
+}
