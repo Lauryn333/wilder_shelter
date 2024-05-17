@@ -6,7 +6,7 @@ function LandingPage() {
     <div className="landing-page">
       <nav className="landing-nav">
         <img
-          src="src\assets\shelter-logo.png"
+          src="../shelter-logo.png"
           alt="Logo de Wilder Shelter"
           className="landing-logo"
         />
